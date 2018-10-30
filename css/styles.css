@@ -1,0 +1,123 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{margin:0;padding:0;border:0;font-size:100%;font-family:'Montserrat', sans-serif;vertical-align:baseline;}
+:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section{display:block;}
+body{line-height:1;}
+ol, ul{list-style:none;}
+blockquote, q{quotes:none;}
+blockquote:before, blockquote:after,
+q:before, q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+.hero{display:table;width:100%;height:100vh;background-image:url(../images/hero.jpg);background-size:cover;background-repeat:no-repeat;}
+.subcontainer2{display:table-cell;vertical-align:middle;}
+.about_me{width:600px;margin:0 auto;text-align:center;}
+.name{font-size:3rem;color:#ffffff;line-height:1.25;font-weight:300;}
+.name span{background:linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.designation{color:#ffffff;font-size:1.5rem;font-weight:normal;}
+.info{font-size:1rem;color:#f7f7f7;font-weight:normal;line-height:1.5;margin-top:30px;}
+.social_profile a i{position:relative;color:#ffffff;font-size:18px;margin:0 7px;line-height:40px;text-align:center;width:40px;height:40px;}
+.social_profile a i::after{position:absolute;content:"";left:0;top:0;width:40px;height:40px;border:1px solid #fff;border-radius:3px;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);-o-transform:rotate(45deg);transform:rotate(45deg);-webkit-transition:all 300ms;-moz-transition:all 300ms;-o-transition:all 300ms;transition:all 300ms;}
+.social_profile a i:hover::after{background:#68c3a3;border:1px solid transparent;z-index:0;color:#ffffff;}
+.social_profile a i::before{position:relative;z-index:1;}
+.social_profile{display:flex;justify-content:center;margin-top:20px;}
+.header{display:flex;width:960px;justify-content:space-between;margin:0 auto;height:50px;}
+.header_container{border-bottom:1px solid #eee;width:100%;background:#ffffff;z-index:1 !important;}
+a{text-decoration:none;color:inherit;}
+.menu ul{display:flex;}
+.menu ul li{color:#989898;line-height:50px;margin-right:25px;}
+.section-title{text-align:center;color:#333333;padding-top:20px;font-size:2rem;font-weight:300;position:relative;}
+.personal_info_subcontainer1{width:500px}
+.personal_info_subcontainer2{width:350px;border:1px solid #989898;}
+.personal_info_container{width:960px;margin:0 auto;display:flex;justify-content:space-between;margin-top:40px;}
+.myimage{width:200px;height:200px;border:2px solid #848484;border-radius:50%;margin:0 auto;display:block;}
+.personal_info_subcontainer1 p{line-height:1.5;font-weight:lighter;color:#222222;font-size:0.875rem;}
+.bio li{border-top:1px solid #969696;padding:10px 20px;}
+.bold{font-weight:700;}
+.section-title::after{content:"";background:url(../images/section-divider.png) no-repeat 0 0;height:15px;width:113px;position:absolute;left:0;right:0;bottom:-23px;margin:0 auto;}
+.experience,.Education{width:960px;margin:0 auto;margin-top:25px;margin-bottom:50px;}
+.resume{background-color:#f7f7f7;}
+.personal_info,.resume{padding:75px 0;}
+.subheader{font-size:1.5rem;font-weight:400;margin-bottom:20px;}
+.para1{font-size:1.125rem;margin-bottom:7px;}
+.para2{font-size:1rem;margin-bottom:7px;line-height:1.25;}
+.para3{font-size:1rem;margin-bottom:10px;}
+.skillset li{list-style-type:disc;list-style-position:inside;margin-bottom:15px;}
+.link{color:#009cff;}
+.link:hover{border-bottom:1px solid #009cff;}
+.subheader1{font-size:1.5rem;font-weight:400;margin-bottom:10px;}
+.project{margin-bottom:50px;}
+.footer{background:#000000;height:85px;}
+.footer .social_profile{margin-top:0;padding-top:20px;}
+section{border-bottom:1px solid rgba(132, 132, 132, 0.2);}
+.myname{line-height:50px;padding-left:10px;font-weight:600;color:#009cff;}
+.active{color:#009cff !important;border-bottom:4px solid #009cff;box-sizing:border-box;}
+@media (min-width:768px) and (max-width:1023px){.header{min-width:768px;width:auto;}
+.personal_info_container{width:100%;}
+.personal_info_subcontainer1{width:60%;}
+.personal_info_subcontainer2{width:40%;}
+.experience, .Education{width:80%;margin:0 auto;}
+}
+@media (min-width:600px) and (max-width:767px){.header{min-width:600px;width:auto;}
+.personal_info_container{width:100%;display:block;}
+.personal_info_subcontainer1{width:100%;}
+.personal_info_subcontainer2{margin:0 auto;}
+.experience, .Education{width:80%;margin:0 auto;}
+}
+@media(min-width:600px){.hamburger_icon{display:none;}
+}
+@media (min-width:425px) and (max-width:599px){.header{max-width:600px;width:auto;}
+.personal_info_container{width:100%;display:block;}
+.personal_info_subcontainer1{width:100%;}
+.personal_info_subcontainer2{margin:0 auto;}
+.experience, .Education{width:80%;}
+.menu{display:none;}
+.display_toggle{display:block !important}
+.header{display:block;}
+.myname{float:left;}
+.menu{clear:both;background:#ffffff;}
+.hamburger_icon{float:right;margin-top:15px;margin-right:15px;}
+.menu ul{display:block;z-index:1;position:relative;}
+.menu ul li{margin:10px 0;line-height:normal;text-align:center;}
+.about_me{max-width:600px;width:auto;}
+.project{margin-bottom:0;margin-top:50px;}
+.name{font-size:2rem;}
+.personal_info_subcontainer1 p{padding:0 25px;margin-bottom:20px;}
+.personal_info, .resume{padding:50px 0;}
+}
+@media (max-width:424px){html,body{font-size:90%;}
+.header{max-width:600px;width:auto;}
+.personal_info_container{width:100%;display:block;}
+.personal_info_subcontainer1{width:100%;}
+.personal_info_subcontainer2{margin:0 auto;width:94%;}
+.experience, .Education{width:80%;}
+.menu{display:none;}
+.display_toggle{display:block !important}
+.header{display:block;}
+.myname{float:left;}
+.menu{clear:both;background:#ffffff;}
+.hamburger_icon{float:right;margin-top:15px;margin-right:15px;}
+.menu ul{display:block;z-index:1;position:relative;}
+.menu ul li{margin:10px 0;line-height:normal;text-align:center;}
+.about_me{max-width:600px;width:auto;}
+.project{margin-bottom:0;margin-top:50px;word-wrap:break-word;}
+.name{font-size:1.75rem;}
+.personal_info, .resume{padding:50px 0;}
+.personal_info_subcontainer1 p{padding:0 25px;margin-bottom:20px;}
+.personal_info, .resume{padding:50px 0;}
+.hero{background-position:92% 48%;}
+}
+.LI-badge-container.horizontal.dark {
+    width: 100% !important;
+}
